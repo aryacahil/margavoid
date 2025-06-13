@@ -28,6 +28,21 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .aspect-ratio-5\/4 {
+            position: relative;
+            padding-bottom: 80%; 
+        }
+        .aspect-ratio-5\/4 > img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -56,57 +71,211 @@
         </div>
         <div id="mobile-menu" class="md:hidden bg-gray-800/95 backdrop-blur-sm absolute top-full left-0 w-full transform -translate-y-4 opacity-0 invisible transition-all duration-300 ease-in-out">
             <a href="index.html#about" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700 transition-colors">About</a>
-            <a href="index.html#team" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700 transition-colors">Team</a>
-            <a href="members.html" class="block py-3 px-6 text-sm text-purple-400 bg-gray-700 transition-colors">Admin</a>
+            <a href="index.html#team" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700 transition-colors">Admin</a>
+            <a href="members.html" class="block py-3 px-6 text-sm text-purple-400 bg-gray-700 transition-colors">Members</a>
             <a href="index.html#gallery" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700 transition-colors">Gallery</a>
             <a href="index.html#contact" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700 transition-colors">Contact</a>
         </div>
     </header>
 
     <main>
-        <section id="members-list" class="py-24 bg-slate-900 overflow-hidden">
+        <section id="members-list" class="py-24 bg-slate-900 min-h-screen">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-16 reveal-on-scroll">
                     <h1 class="text-4xl sm:text-5xl font-bold text-white">Our Members</h1>
                     <p class="mt-4 text-lg text-gray-400">The talented individuals of Marga Void.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-6">
                     
                     <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
-                        <img src="https://placehold.co/500x350/8b5cf6/ffffff?text=Member+Photo" alt="Foto Member 1" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white">Nama Member</h3>
-                            <p class="text-purple-400 text-sm mt-1">Joined: 10 June 2025</p>
-                            <p class="text-gray-300 mt-4">
-                                Ini adalah area untuk bio singkat member. Tuliskan deskripsi tentang peran, keahlian, atau kontribusi mereka di dalam Marga Void.
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/1/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold text-white truncate">Member #1</h3>
+                            <p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p>
+                            <p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">
+                                Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.
                             </p>
                         </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/2/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #2</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/3/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #3</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/4/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #4</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/5/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #5</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/6/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #6</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/7/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #7</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/8/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #8</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/9/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #9</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/10/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #10</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/11/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #11</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/12/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #12</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/13/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #13</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/14/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #14</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/15/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #15</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/16/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #16</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/17/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #17</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/18/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #18</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/19/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #19</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/20/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #20</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/21/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #21</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/22/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #22</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/23/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #23</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/24/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #24</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/25/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #25</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/26/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #26</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/27/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #27</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/28/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #28</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/29/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #29</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll">
+                        <div class="aspect-ratio-5\/4">
+                            <img src="https://picsum.photos/seed/30/500/400" alt="Foto Member">
+                        </div>
+                        <div class="p-4"><h3 class="text-lg font-bold text-white truncate">Member #30</h3><p class="text-purple-400 text-xs mt-1">Joined: 13 Jun 2025</p><p class="text-gray-400 mt-3 text-xs h-16 overflow-hidden">Bio singkat member ada di sini. Ganti teks ini dengan deskripsi member.</p></div>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll" style="transition-delay: 100ms;">
-                        <img src="https://placehold.co/500x350/d946ef/ffffff?text=Member+Photo" alt="Foto Member 2" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white">Nama Member Lain</h3>
-                            <p class="text-purple-400 text-sm mt-1">Joined: 11 June 2025</p>
-                            <p class="text-gray-300 mt-4">
-                                Bio untuk member kedua. Anda bisa menambahkan lebih banyak kartu seperti ini dengan menyalin dan menempelkan blok kode ini.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-on-scroll" style="transition-delay: 200ms;">
-                        <img src="https://placehold.co/500x350/3b82f6/ffffff?text=Member+Photo" alt="Foto Member 3" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white">Member Ketiga</h3>
-                            <p class="text-purple-400 text-sm mt-1">Joined: 12 June 2025</p>
-                            <p class="text-gray-300 mt-4">
-                                Cukup ganti informasi seperti nama, tanggal join, bio, dan jangan lupa untuk mengganti `src` pada tag `<img>` dengan foto member.
-                            </p>
-                        </div>
-                    </div>
-
-                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -132,9 +301,11 @@
 
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('invisible', 'opacity-0', '-translate-y-4');
-                menuIconOpen.classList.remove('hidden');
-                menuIconClose.classList.add('hidden');
+                if (link.getAttribute('href').startsWith('index.html#')) {
+                    mobileMenu.classList.add('invisible', 'opacity-0', '-translate-y-4');
+                    menuIconOpen.classList.remove('hidden');
+                    menuIconClose.classList.add('hidden');
+                }
             });
         });
 
@@ -145,6 +316,8 @@
             const revealObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
+                        const delay = Math.floor(Math.random() * 2) * 150; // 0ms atau 150ms
+                        entry.target.style.transitionDelay = `${delay}ms`;
                         entry.target.classList.add('is-visible');
                         observer.unobserve(entry.target);
                     }
